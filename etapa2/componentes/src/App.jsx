@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import PrimeiroComponente from './components/primeiroComponente'
-
+ 
 function App() {
   const [count, setCount] = useState(0)
  
