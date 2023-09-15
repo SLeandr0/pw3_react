@@ -3,6 +3,8 @@ import BannerControle from './components/BannerControle';
 import GestorDados from './components/GestorDados';
 import './App.css'
 import ListaDados from './components/ListaDados';
+import AppTamanhoImages from './components/AppTamanhoImages';
+import ListaAlunosSorteio from './components/ListaAlunosSorteio';
 
 function App() {
   const w=600
@@ -24,6 +26,12 @@ function App() {
         </div>
         <div>
           <ListaDados/>
+        </div>
+        <div>
+          <AppTamanhoImages />
+        </div>
+        <div>
+          <ListaAlunosSorteio />
         </div>
       </div>
     </>
