@@ -1,7 +1,5 @@
 // EXTENÇÃO - es7 + react
 
-import ListaFragmentos from "./ListaFragmentos"
-
 const Fragmentos = ({marca, km, modelo, usado, ano}) => {
     const tableStyle = {
         margin: '0 auto',
@@ -26,7 +24,6 @@ const Fragmentos = ({marca, km, modelo, usado, ano}) => {
             <td>{ano}</td>
         </tr>
     </table>
-    <div><ListaFragmentos listaMotos={motos}/></div>
     </>
   )
 }

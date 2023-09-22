@@ -1,7 +1,12 @@
-const ListaFragmentos = (motos) => {
+import './ListaFragmentos.css'
+
+const ListaFragmentos = ({motos}) => {
+  const tableStyle = {
+    margin: '0 auto',
+}
   return (
     <>
-    <table>
+    <table className="lf-table">
         <tr>
             <th>Marca</th>
             <th>Modelo</th>
@@ -10,13 +15,18 @@ const ListaFragmentos = (motos) => {
             <th>Ano</th>
         </tr>
         {motos.map((itemMoto) => {
-            <tr key={itemMoto.id}>
+          return(
+            <tr key={itemMoto.id} style={
+              itemMoto.id % 2 == 0 ?
+              {background: "#ccc", color: "#000"}:null
+            }>
                 <td>{itemMoto.marca}</td>
                 <td>{itemMoto.modelo}</td>
                 <td>{itemMoto.km}</td>
                 <td>{itemMoto.usado ? "Usado" : "Novo"}</td>
                 <td>{itemMoto.ano}</td>
             </tr>
+          )
         })}
     </table>
     </>
